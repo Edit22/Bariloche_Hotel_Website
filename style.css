@@ -333,7 +333,7 @@ body {
 }
 
 .header-build-text h1 {
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     transition: color 0.6s ease;
 }
@@ -383,14 +383,30 @@ body {
 @media (max-width: 1024px) {
     .image-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 5px
     }
 }
+@media (max-width: 540px) {
+    .image-container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        width: 92vw;
+    }
+}
+@media (max-width: 390px) {
+    .square-image1, .square-image2, .square-image3 {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 
 .square-image1, .square-image2, .square-image3 {
     position: relative;
     background-size: cover;
-    width: 290px;
-    height: 290px;
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
     margin-bottom: 25px;
     padding: 20px;
 }
@@ -420,6 +436,7 @@ body {
     height: 150px;
     background-color: white;
     margin-bottom: 40px;
+    margin: 0 auto;
     padding: 20px;
 }
 
