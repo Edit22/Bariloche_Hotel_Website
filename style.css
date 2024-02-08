@@ -368,45 +368,35 @@ body {
 /* Image/packages squares  */
 
 .image-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    background-color: white;
-    z-index: 3;
+    align-items: center;
+    gap: 15px;
+    width: 98vw;
+    margin: 0 auto;
+    margin-top: 150px;
     transition: background-color 0.6s ease;
 }
 
-.image-container-images {
-    transition: background-color 0.6s ease;
-}
 
-@media (max-width: 768px) {
-    .square-image1,
-    .square-image2,
-    .square-image3 {
-        /* position: relative;
-        background-size: cover; */
-        width: 260px;
-        height: 260px;
-        /* margin-bottom: 25px;
-        padding: 20px; */
+@media (max-width: 1024px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.square-image1,
-.square-image2,
-.square-image3 {
+.square-image1, .square-image2, .square-image3 {
     position: relative;
     background-size: cover;
-    width: 260px;
-    height: 260px;
+    width: 290px;
+    height: 290px;
     margin-bottom: 25px;
     padding: 20px;
 }
 
 .square-image1 {
     background-image: url(images/6.png);
-
 }
 
 .square-image2 {
@@ -420,14 +410,14 @@ body {
 .square-image-description {
     position: absolute;
     color: white;
-    top: 250px;
-    left: 10px;
+    top: 270px;
+    left: 20px;
 }
 
 
 .image-white {
     width: 260px;
-    height: 100px;
+    height: 150px;
     background-color: white;
     margin-bottom: 40px;
     padding: 20px;
